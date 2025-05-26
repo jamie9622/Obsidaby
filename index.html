@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obsidaby Player</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="screenshots.html">Screenshots</a>
-    <a href="download.html">Download</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <img src="assets/logo.png" alt="Obsidaby Logo" class="nav-logo" />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="screenshots.html">Screenshots</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header class="hero">
-    <img src="assets/logo.png" alt="Obsidaby Logo" class="logo"/>
-    <h1>Welcome to Obsidaby Player</h1>
-    <p class="tagline">The Ultimate IPTV Experience for Firestick</p>
-    <a href="download.html" class="cta">Download Now</a>
+  <header class="hero-section">
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Obsidaby Logo" class="hero-logo"/>
+      <h1>Welcome to Obsidaby Player</h1>
+      <p>The Ultimate IPTV Experience for Firestick</p>
+      <a href="download.html" class="cta-button">Download Now</a>
+    </div>
   </header>
 
-  <section class="features-preview">
+  <section class="features-section">
     <h2>Why Obsidaby?</h2>
-    <ul>
-      <li><strong>Beautiful Sky-style Interface</strong></li>
-      <li>Multi-Playlist IPTV Support</li>
-      <li>Live TV, Catch-Up & VOD</li>
-      <li>XMLTV EPG + Channel Logos</li>
-      <li>PIN-Lock Adult Channels</li>
-      <li>Autoplay, Resume, and Voice Search</li>
-    </ul>
+    <div class="feature-grid">
+      <div class="feature-card">🎨 Beautiful Sky-style Interface</div>
+      <div class="feature-card">📺 Multi-Playlist IPTV Support</div>
+      <div class="feature-card">⏪ Live TV, Catch-Up & VOD</div>
+      <div class="feature-card">📊 XMLTV EPG + Channel Logos</div>
+      <div class="feature-card">🔐 PIN-Lock Adult Channels</div>
+      <div class="feature-card">⚙️ Autoplay, Resume & Voice Search</div>
+    </div>
   </section>
 
   <footer>
