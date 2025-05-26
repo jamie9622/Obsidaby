@@ -6,90 +6,102 @@
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #ffffff;
-  color: #333;
-  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 .navbar {
-  background: #f5f5f5;
-  padding: 1em 2em;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.9);
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.nav-container {
+.nav-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.nav-logo {
-  height: 40px;
+  justify-content: space-between;
 }
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 1.2em;
+  list-style: none;
 }
 .nav-links a {
   text-decoration: none;
   color: #6e3aff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
-.hero-section {
+.nav-links a:hover {
+  color: #e43aff;
+}
+.logo {
+  height: 45px;
+}
+.hero {
   background: linear-gradient(120deg, #6e3aff, #e43aff);
   color: white;
-  padding: 4em 2em;
+  padding: 5em 1em 4em;
   text-align: center;
+  position: relative;
 }
 .hero-logo {
-  width: 120px;
-  margin-bottom: 1em;
+  width: 140px;
+  margin-bottom: 1.2em;
 }
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5em;
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.6em;
 }
-.hero-content p {
-  font-size: 1.2rem;
+.hero-text p {
+  font-size: 1.25rem;
   margin-bottom: 1.5em;
 }
-.cta-button {
+.btn-primary {
   background: white;
   color: #6e3aff;
   padding: 0.75em 2em;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
 }
-.cta-button:hover {
-  background: #f0f0f0;
+.btn-primary:hover {
+  background: #f5f5f5;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
-.features-section {
-  padding: 3em 2em;
-  text-align: center;
+.features {
+  padding: 4em 1em;
   background: #f9f9f9;
+  text-align: center;
 }
-.features-section h2 {
+.features h2 {
   font-size: 2rem;
   margin-bottom: 2em;
 }
-.feature-grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5em;
-  max-width: 1000px;
-  margin: 0 auto;
 }
-.feature-card {
+.card {
   background: white;
   padding: 1.5em;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   font-size: 1rem;
 }
 footer {
-  background: #eee;
+  background: #111;
+  color: #ccc;
+  padding: 2em 1em;
   text-align: center;
-  padding: 1.5em;
-  font-size: 0.9em;
-  color: #555;
+  font-size: 0.9rem;
 }
